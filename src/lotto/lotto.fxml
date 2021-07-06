@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.effect.Reflection?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.63" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.Controller">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.63" prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.Controller">
    <children>
       <TitledPane animated="false" prefHeight="22.0" prefWidth="600.0" text="Überschrift">
         <content>
@@ -39,9 +40,10 @@
             <Reflection bottomOpacity="0.69" fraction="0.87" topOpacity="0.38" />
          </effect>
       </Button>
-      <ListView fx:id="lstzahlen">
+      <Button fx:id="btnstart2" mnemonicParsing="false" onAction="#onlottostart2" text="Start 2" />
+      <ListView fx:id="lstzahlen" orientation="HORIZONTAL" prefHeight="100.0" prefWidth="600.0">
          <padding>
-            <Insets left="260.0" />
+            <Insets left="200.0" />
          </padding></ListView>
       <VBox prefHeight="162.0" prefWidth="600.0">
          <children>
@@ -57,6 +59,11 @@
             </Sphere>
          </children>
       </VBox>
+      <TextArea fx:id="txtlottozahlen" editable="false" prefHeight="200.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TextArea>
    </children>
    <cursor>
       <Cursor fx:constant="DEFAULT" />
