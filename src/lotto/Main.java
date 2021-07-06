@@ -14,7 +14,7 @@ public class Main extends Application {
 
 
         primaryStage.setTitle("Hello Lotto");
-        primaryStage.setScene(new Scene(root, 350, 240));
+        primaryStage.setScene(new Scene(root, 550  , 380));
         primaryStage.show();
     }
 

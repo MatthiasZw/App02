@@ -7,10 +7,28 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Controller {
+    static final int Max_Anzahl_Zahlen=6;
+    Random rnd;
+    public Controller(){
+        rnd = new Random();
+    }
+
+    private Integer[] lottoziehnug(){
+
+        Set<Integer> lottoGenial = new HashSet<>();
+        while (lottoGenial.size()<Max_Anzahl_Zahlen) {
+            lottoGenial.add(rnd.nextInt(49)+1);
+
+    }
+
+        Integer [] lottoGenialArr=lottoGenial.toArray(new Integer[]{});
+        Arrays.sort(lottoGenial.toArray());
+        return lottoGenialArr;
+
+    }
 
     @FXML
     private Button btnstart;
@@ -20,12 +38,8 @@ public class Controller {
 
     @FXML
     void onlottostart(ActionEvent event) {
-        int [] z = {1,2,3,4,5,6};
-        List<Integer> lottolist=new ArrayList<>();
-        for (var e:z) {
-            lottolist.add(e);
-        }
-       ObservableList<Integer> olsLotto = FXCollections.observableArrayList(lottolist);
+
+       ObservableList<Integer> olsLotto = FXCollections.observableArrayList(this.lottoziehnug());
         lstzahlen.setItems(olsLotto);
 
     }
