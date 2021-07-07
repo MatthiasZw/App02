@@ -1,4 +1,4 @@
-package login;
+package Rechner;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,11 +10,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("rechner.fxml"));
 
 
-        primaryStage.setTitle("Bartowski Corporation");
-        primaryStage.setScene(new Scene(root, 550  , 380));
+        primaryStage.setTitle("Rechner");
+        primaryStage.setScene(new Scene(root, 600  , 380));
         primaryStage.show();
     }
 

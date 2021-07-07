@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text=" Rechner 2000" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rechner.Controller">
+   <content>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="145.0" layoutY="76.0" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;" text="Wert 1" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="117.0" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;" text="Wert 2" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="wert1field" layoutX="261.0" layoutY="81.0" style="-fx-background-color: lightblue; -fx-background-radius: 20;" />
+            <TextField fx:id="wert2field" layoutX="261.0" layoutY="122.0" style="-fx-background-color: lightblue; -fx-background-radius: 20;" />
+            <Button fx:id="plusbutton" layoutX="440.0" layoutY="162.0" mnemonicParsing="false" onAction="#onplus" prefHeight="45.0" prefWidth="124.0" style="-fx-background-color: crimson; -fx-background-radius: 20;" text="PLUS" textFill="#00c4f5">
+               <font>
+                  <Font name="Constantia" size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ergebnisfield" layoutX="261.0" layoutY="223.0" style="-fx-background-color: pink; -fx-background-radius: 20;" />
+            <Label layoutX="141.0" layoutY="218.0" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;" text="Ergebnis" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Leelawadee UI Semilight" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>
