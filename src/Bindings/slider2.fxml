@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="untitled" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bindings.Controller2">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="13.0" layoutY="10.0" prefHeight="352.0" prefWidth="567.0">
+               <children>
+                  <Slider fx:id="sld1" layoutX="59.0" layoutY="1.0" onMouseDragged="#ondrag1" prefHeight="14.0" prefWidth="373.0" showTickLabels="true" showTickMarks="true" />
+                  <Slider fx:id="sld2" layoutX="16.0" layoutY="1.0" onMouseDragged="#ondrag2" orientation="VERTICAL" prefHeight="193.0" prefWidth="14.0" showTickLabels="true" showTickMarks="true" />
+                  <Circle fx:id="krs" fill="DODGERBLUE" layoutX="284.0" layoutY="176.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <TextField fx:id="txt" layoutX="391.0" layoutY="290.0" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
