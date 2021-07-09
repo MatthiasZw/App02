@@ -2,6 +2,8 @@ package FXListeSearch;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,7 +22,8 @@ public class Controller implements Initializable {
 
     final ObservableList<String> entries= FXCollections.observableArrayList(names);
 
-
+    private FilteredList<String> filteredData;
+    private SortedList<String> sortedList;
 
 
     @FXML
@@ -34,7 +37,7 @@ public class Controller implements Initializable {
 
     @FXML
     void onsearch(ActionEvent event) {
-        list.
+
 
 
     }
