@@ -58,8 +58,6 @@ public class Main extends Application {
 
     private Optional<ButtonType> showConfirmdialog() {
         return new Alert(Alert.AlertType.CONFIRMATION, "wollen wir wurst").showAndWait();
-
-
     }
 
 
